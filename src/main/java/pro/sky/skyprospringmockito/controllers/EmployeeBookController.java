@@ -18,7 +18,7 @@ public class EmployeeBookController {
                               @RequestParam ("firstName") String firstName,
                               @RequestParam ("patronymicName") String patronymicName,
                               @RequestParam ("salary") int salary,
-                              @RequestParam ("department") int department){
+                              @RequestParam ("department") String department){
         return employeeBookService.addEmployee(lastName, firstName, patronymicName, salary, department);
     }
 

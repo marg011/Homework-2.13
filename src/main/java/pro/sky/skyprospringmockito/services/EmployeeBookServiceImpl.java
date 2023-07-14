@@ -17,7 +17,7 @@ public class EmployeeBookServiceImpl implements EmployeeBookService {
         return employees;
     }
 
-    public String addEmployee(String lastName, String firstName, String patronymicName, int salary, int department) {
+    public String addEmployee(String lastName, String firstName, String patronymicName, int salary, String department) {
 
         validateNames(lastName, firstName, patronymicName);
 

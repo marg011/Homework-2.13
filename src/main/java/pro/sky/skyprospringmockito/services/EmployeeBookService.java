@@ -6,7 +6,7 @@ import java.util.Map;
 
 public interface EmployeeBookService {
 
-    String addEmployee(String lastName, String firstName,String patronymicName, int salary, int department);
+    String addEmployee(String lastName, String firstName,String patronymicName, int salary, String department);
     Map<String, Employee> getEmployees();
 
 
