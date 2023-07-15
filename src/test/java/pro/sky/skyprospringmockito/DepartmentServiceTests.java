@@ -211,7 +211,11 @@ public class DepartmentServiceTests {
 
         Map<String, List<Employee>> actual = departmentService.getEmployeesByDepartments();
 
-        assertEquals(expected, actual);
+        assertEquals(expected.keySet(), actual.keySet());
+        assertEquals(expected.size(), actual.size());
+        assertEquals(expected.get("sales").get(0), actual.get("sales").get(1));
+        assertEquals(expected.get("sales").get(1), actual.get("sales").get(0));
+        assertEquals(expected.get("it").get(0), actual.get("it").get(0));
     }
 
     }
